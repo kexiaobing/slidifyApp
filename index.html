@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slidify application - BMI calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Slidify application - BMI calculator">
+  <meta name="author" content="Ke Xiaobing">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Slidify application - BMI calculator</h1>
+    <h2>The presentation of the shiny application</h2>
+    <p>Ke Xiaobing<br/>System Engineer</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction of the application</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The Shiny app created for BMI calculator is displayed in the following screenshot.</li>
+<li>Please be patient to wait around 10 seconds for page loading.</li>
+<li>The app is user-friendly and easy to understand. The instructions of how to use this appliation can be found in the page.</li>
+<li>You just need to manually enter your weight and height in left panel and click on &quot;Submit&quot; button. Then you could see calculation result in the right side.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>App showcase</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Try the application from here.</p>
+
+<p><img src="screen.png" alt="screenshot"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>BMI Calculation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The body mass index (BMI), or Quetelet index, is a measure of relative size based on the mass and height of an individual.</p>
+
+<p>The index was devised by Adolphe Quetelet during the course of developing what he called &quot;social physics&quot;, between 1830 and 1850. The BMI for a person is defined as their body mass divided by the square of their height-with the value universally being given in units of kg/m2. If an individual has weight 60kg and height 1.65 meter, the BMI calculation is as follows.</p>
+
+<pre><code class="r">weight &lt;- 60.00
+height &lt;- 1.65
+BMI &lt;- round((weight / (height * height)), digits = 1)
+BMI
+</code></pre>
+
+<pre><code>## [1] 22
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>BMI Category</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A frequent use of the BMI is to assess how much an individual&#39;s body weight departs from what is normal or desirable for a person of his or her height. The weight excess or deficiency may, in part, be accounted for by body fat (adipose tissue) although other factors such as muscularity also affect BMI significantly. The WHO regards a BMI of less than 18.5 as underweight and may indicate malnutrition, an eating disorder, or other health problems, while a BMI greater than 25 is considered overweight. These ranges of BMI values are valid only as statistical categories.</p>
+
+<ul>
+<li>BMI &lt; 18.5: Underweight</li>
+<li>18.5 &lt; BMI &lt; 25: Normal</li>
+<li>BMI &gt; 25: Overweight</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction of the application'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='App showcase'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='BMI Calculation'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='BMI Category'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
